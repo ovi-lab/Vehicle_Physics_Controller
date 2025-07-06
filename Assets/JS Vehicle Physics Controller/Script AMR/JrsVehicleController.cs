@@ -173,7 +173,7 @@ public class JrsVehicleController : MonoBehaviour
         prevRotation = currentRotation;
 
         // Check if the vehicle is in motion
-        bool isMoving = rb.velocity.magnitude > 0.1f;
+        bool isMoving = rb.linearVelocity.magnitude > 0.1f;
 
         // Check if any of the wheels are slipping or drifting
         bool isFrontLeftSlipping = IsWheelSlipping(frontLeftWheel);
